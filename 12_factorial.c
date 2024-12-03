@@ -1,12 +1,17 @@
 //12.program to find the factorial of a given number
-#include <stdio.h>	
-int main(){
-    int i, n, result;
-    printf("enter the number whose factorial you want: ");
-    scanf("%d",&n);
-    for(result=n, i=n-1; i>0; i--){
-        result=result*i;
+#include <stdio.h>
+int factorial(int n){
+    if(n==0 || n==1){
+        return 1;
     }
-    printf("factorial of %d is: %d",n,result);
+    else{
+        return n*factorial(n-1);
+    }
+}	
+int main(){
+    int n;
+    printf("enter the number whose factorial you want : ");
+    scanf("%d",&n);
+    printf("factorial of %d is %d",n,factorial(n));
     return 0;
 }

@@ -2,7 +2,7 @@
 #include <stdio.h>	
 int main(){
     int n, i, j, odd=0, even=0;
-    printf("enter the number upto which you want the sum of odd and even number: ");
+    printf("enter the number upto which you want the sum of odd and even numbers: ");
     scanf("%d",&n);
     for(i=0; i<=n; i=i+2){
         even=even+i;
@@ -10,6 +10,6 @@ int main(){
     for(j=1; j<=n; j=j+2){
         odd =odd+j;
     }
-    printf("sum of all even numbers between 1 and %d : %d\nsum of all odd numbers from 1 to %d : %d",n,even,n,odd);
+    printf("sum of all even numbers between 1 and %d is %d\nsum of all odd numbers from 1 to %d is %d",n,even,n,odd);
     return 0;
 }
